@@ -34,6 +34,7 @@ def binario_decimal(binario):# Función que convierte un número binario a decim
     return decimal
 
 # Programa principal
+
 numero_decimal = 10
 numero_binario = decimal_binario(numero_decimal)
 print(f"Decimal {numero_decimal} a binario: {numero_binario}")
