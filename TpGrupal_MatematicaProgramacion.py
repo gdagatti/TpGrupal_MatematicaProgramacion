@@ -3,7 +3,7 @@ Desarrollar un programa que convierta números decimales a binarios y, de forma 
 Extensión: Validar la entrada y mostrar mensajes de error ante datos incorrectos."""
 ###Integrantes:
 #   * Contreras, Agustín -  DNI: 
-#   * Cortes, Leonardo - DNI: 
+#   * Cortes, Leonardo - DNI: 34711991
 #   * Cuello, Franco - DNI:
 #   * Dagatti, German - DNI: 31230293
 #   * Demiryi, Nicolás - DNI: 
