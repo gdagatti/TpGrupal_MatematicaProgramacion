@@ -17,7 +17,7 @@ def decimal_binario(decimal): # Función que convierte un número decimal a bina
         residuo = decimal % 2 #Calcula el residuo de la división del número ingresado y 2
         binario = str(residuo) + binario # Va formando el string de 0 y 1 que componen al numero binario final 
         decimal //= 2 # Calcula el cociente exacto entre el número ingresado y 2 
-        return validar_binario(binario) # LLama a la función validar_binario. 
+    return validar_binario(binario) # LLama a la función validar_binario. 
 
 def validar_binario(binario):
     if binario:  # Verifica si la cadena 'binario' no está vacía
@@ -34,11 +34,17 @@ def binario_decimal(binario):# Función que convierte un número binario a decim
     return decimal
 
 # Programa principal
-
-numero_decimal = 10
-numero_binario = decimal_binario(numero_decimal)
-print(f"Decimal {numero_decimal} a binario: {numero_binario}")
-
-binario = "11001"
-decimal = binario_decimal(binario)
-print(f"Binario {binario} a decimal: {decimal}")
+print("Si quiere convertir un numero de DECIMAL a BINARIO, presione D")
+print("Si quiere convertir un número de BINARIO a DECIMAL, presione B")
+opcion=input("Ingrese la opcion seleccionada: ").upper()
+if opcion == "D":
+    numero_decimal = int(input("Ingrese su número en base 10: "))
+    numero_binario = decimal_binario(numero_decimal)
+    print(f"Decimal {numero_decimal} a binario: {numero_binario}")
+elif opcion == "B":
+    binario = input("Ingrese su número en base 2: ")
+    decimal = binario_decimal(binario)
+    print(f"Binario {binario} a decimal: {decimal}")
+else:
+    print("La opción escogida no es válida")
+    exit()
