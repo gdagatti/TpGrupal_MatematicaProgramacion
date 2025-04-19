@@ -33,18 +33,33 @@ def binario_decimal(binario):# Función que convierte un número binario a decim
         potencia -= 1 # Disminuye en uno la potencia 
     return decimal
 
+def main():
+    print("Seleccione una opción:")
+    print("[D] Convertir de DECIMAL a BINARIO")
+    print("[B] Convertir de BINARIO a DECIMAL")
+
+    opcion = input("Ingrese la opción seleccionada: ").strip().upper()
+
+    if opcion == "D":
+        try:
+            numero_decimal = int(input("Ingrese su número en base 10: "))
+            print(f"Decimal {numero_decimal} a binario: {decimal_binario(numero_decimal)}")
+        except ValueError:
+            print("Error: Ingrese un número válido.")
+    
+    elif opcion == "B":
+        binario = input("Ingrese su número en base 2: ").strip()
+        if all(d in "01" for d in binario):  # Verifica que la entrada sea binaria
+            print(f"Binario {binario} a decimal: {binario_decimal(binario)}")
+        else:
+            print("Error: Ingrese un número binario válido.")
+
+    else:
+        print("La opción escogida no es válida.")
+
+
+
 # Programa principal
-print("Si quiere convertir un numero de DECIMAL a BINARIO, presione D")
-print("Si quiere convertir un número de BINARIO a DECIMAL, presione B")
-opcion=input("Ingrese la opcion seleccionada: ").upper()
-if opcion == "D":
-    numero_decimal = int(input("Ingrese su número en base 10: "))
-    numero_binario = decimal_binario(numero_decimal)
-    print(f"Decimal {numero_decimal} a binario: {numero_binario}")
-elif opcion == "B":
-    binario = input("Ingrese su número en base 2: ")
-    decimal = binario_decimal(binario)
-    print(f"Binario {binario} a decimal: {decimal}")
-else:
-    print("La opción escogida no es válida")
-    exit()
+if __name__ == "__main__":
+    main()
+
