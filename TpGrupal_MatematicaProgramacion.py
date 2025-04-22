@@ -33,6 +33,7 @@ def binario_decimal(binario):# Función que convierte un número binario a decim
         potencia -= 1 # Disminuye en uno la potencia 
     return decimal
 
+#Optimización por IA (Copilot)
 def main():
     print("Seleccione una opción:")
     print("[D] Convertir de DECIMAL a BINARIO")
@@ -40,7 +41,7 @@ def main():
 
     opcion = input("Ingrese la opción seleccionada: ").strip().upper()
 
-    if opcion == "D":
+    if opcion == "D":  
         try:
             numero_decimal = int(input("Ingrese su número en base 10: "))
             print(f"Decimal {numero_decimal} a binario: {decimal_binario(numero_decimal)}")
