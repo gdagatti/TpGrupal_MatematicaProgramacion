@@ -6,7 +6,7 @@ Extensión: Validar la entrada y mostrar mensajes de error ante datos incorrecto
 #   * Cortes, Leonardo - DNI: 34711991
 #   * Cuello, Franco - DNI:
 #   * Dagatti, German - DNI: 31230293
-#   * Demiryi, Nicolás - DNI: 
+#   * Demiryi, Nicolás - DNI: 39717139
 # ###
 
 # Definición de Funciones 
