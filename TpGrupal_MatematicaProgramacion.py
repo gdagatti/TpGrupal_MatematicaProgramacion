@@ -42,10 +42,13 @@ def main():
     opcion = input("Ingrese la opción seleccionada: ").strip().upper()
 
     if opcion == "D":  
-        try:
-            numero_decimal = int(input("Ingrese su número en base 10: "))
-            print(f"Decimal {numero_decimal} a binario: {decimal_binario(numero_decimal)}")
-        except ValueError:
+        try: # Verifica que el número ingresado sea correcto 
+            numero_decimal = int(input("Ingrese su número en base 10 (debe ser positivo): "))
+            if numero_decimal < 0: # Verificación que el número ingresado sea positivo
+                print("Error: Ingrese un número positivo.")
+            else:
+                print(f"Decimal {numero_decimal} a binario: {decimal_binario(numero_decimal)}")
+        except ValueError: 
             print("Error: Ingrese un número válido.")
     
     elif opcion == "B":
