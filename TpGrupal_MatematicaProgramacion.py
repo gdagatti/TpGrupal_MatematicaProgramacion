@@ -44,7 +44,7 @@ def main():
     if opcion == "D":  
         try: # Verifica que el número ingresado sea correcto 
             numero_decimal = int(input("Ingrese su número en base 10 (debe ser positivo): "))
-            if numero_decimal < 0: # Verificación que el número ingresado sea positivo
+            if numero_decimal < 0: # Verificación que el número sea positivo
                 print("Error: Ingrese un número positivo.")
             else:
                 print(f"Decimal {numero_decimal} a binario: {decimal_binario(numero_decimal)}")
